@@ -25,6 +25,7 @@ const getSongsByUserId = async (): Promise<Song[]> => {
   if (error) {
     console.log(error.message);
   }
+
   return (data as any) || [];
 };
 
